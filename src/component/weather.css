@@ -1,0 +1,131 @@
+.weather {
+    place-self: center;
+    padding: 40px;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #3f4680, #500ae4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.h1{
+    text-align: center;
+    padding: 10px;
+    
+}
+.span{color: rgb(13, 60, 216); }
+.search input {
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    padding-left: 25px;
+    color: #626262;
+    background-color: #ebfffc;
+    font-size: 18px;
+}
+
+.search img {
+    width: 50px;
+    padding: 15px;
+    border-radius: 50px;
+    background-color: #ebfffc;
+    cursor: pointer;
+}
+
+.weather-icon {
+    width: 150px;
+    margin: 30px 0px;
+}
+
+.temperature {
+    color: #fff;
+    font-size: 80px;
+    line-height: 1;
+}
+
+.location {
+    color: #fff;
+    font-size: 40px;
+}
+
+.weather-data {
+    width: 100%;
+    margin-top: 40px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.weather-data .col {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 22px;
+}
+
+.weather-data .col span {
+    display: block;
+    font-size: 16px;
+}
+
+.weather-data .col img {
+    width: 26px;
+    margin-top: 10px;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and below) */
+@media (max-width: 600px) {
+    .weather {
+        padding: 20px;
+    }
+    .search input {
+        font-size: 16px;
+        padding-left: 15px;
+        width: 100%;
+    }
+    .search img {
+        width: 40px;
+        padding: 10px;
+    }
+    .weather-icon {
+        width: 100px;
+    }
+    .temperature {
+        font-size: 60px;
+    }
+    .location {
+        font-size: 30px;
+    }
+    .weather-data .col {
+        font-size: 18px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and below) */
+@media (max-width: 768px) {
+    .temperature {
+        font-size: 70px;
+    }
+    .location {
+        font-size: 35px;
+    }
+    .search input {
+        font-size: 16px;
+    }
+}
+
+/* Large devices (laptops/desktops, 1024px and below) */
+@media (max-width: 1024px) {
+    .temperature {
+        font-size: 75px;
+    }
+    .location {
+        font-size: 38px;
+    }
+}
